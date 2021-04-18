@@ -42,7 +42,7 @@ public class NaverCosmeticCrwaler {
         System.out.println("searchWord : " + searchWord);
         System.out.println("clientId : " + clientId);
         System.out.println("clientSecret : " + clientSecret);
-        /////////////////
+        /////////////////test
 
         NaverOpenApi naverOpenApi = new NaverOpenApi();
         String responseBody = naverOpenApi.getData(clientId, clientSecret, queryParameter, searchWord);
