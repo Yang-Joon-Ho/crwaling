@@ -77,6 +77,8 @@ public class NaverCosmeticCrawler {
         NaverOpenApi naverOpenApi = new NaverOpenApi();
         String responseBody = naverOpenApi.getData(clientId, clientSecret, queryParameter, searchWord);
 
+//        System.out.println("responsebody : " + responseBody);
+
         JsonMapperUtil jsonMapper = new JsonMapperUtil <List<ItemDto>>();
         List<ItemDto> list = null;
 
@@ -116,7 +118,7 @@ public class NaverCosmeticCrawler {
         if(doc == null) return;
 
         ////////////////////
-        itemService.get("reputationService").toString();
+//        System.out.println("itemService : " + itemService + ", reputationService : " + itemService.get("reputationService").toString());
         ////////////////////
 
         //리뷰 & 평점 저장
@@ -126,6 +128,8 @@ public class NaverCosmeticCrawler {
         //상세정보 + item 기본 정보 + 카테고리 + 평점 추가
         CosmeticDto cosmeticDto = detailParser.parse(doc);
         Cosmetic cosmetic = cosmeticDto.toEntity(itemDto);
+
+        //카테고리
         Category category = (Category) itemService.get("categoryService")
                 .save(new ItemCategoryVO(cosmeticDto.getCategories()));
         cosmetic.setCategory(category);
