@@ -1,6 +1,6 @@
 package com.example.crawling.item.domain.cosmetic.review;
 
-import com.example.crawling.Dto.Reputation;
+import com.example.crawling.item.domain.Reputation;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

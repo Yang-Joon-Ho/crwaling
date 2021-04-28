@@ -1,6 +1,6 @@
 package com.example.crawling.parsers;
 
-import com.example.crawling.Dto.Reputation;
+import com.example.crawling.item.domain.Reputation;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;

@@ -1,7 +1,5 @@
 package com.example.crawling.item.domain;
 
-import com.example.crawling.Dto.Category;
-import com.example.crawling.Dto.Item;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

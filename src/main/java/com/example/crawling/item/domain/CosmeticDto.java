@@ -1,5 +1,6 @@
-package com.example.crawling.Dto;
+package com.example.crawling.item.domain;
 
+import com.example.crawling.Dto.ItemDto;
 import com.example.crawling.constants.NaverCosmeticItemFeature;
 import com.example.crawling.item.domain.cosmetic.ingredient.Ingredient;
 import lombok.Getter;

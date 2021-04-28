@@ -1,6 +1,6 @@
 package com.example.crawling.item.service;
 
-import com.example.crawling.Dto.Reputation;
+import com.example.crawling.item.domain.Reputation;
 import com.example.crawling.item.domain.cosmetic.review.ReputationRepository;
 import com.example.crawling.item.domain.cosmetic.review.Review;
 import com.example.crawling.item.domain.cosmetic.review.ReviewRepository;

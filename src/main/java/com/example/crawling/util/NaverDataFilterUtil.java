@@ -11,10 +11,6 @@ public class NaverDataFilterUtil {
 
     public static List<ItemDto> itemFilter(List<ItemDto> naverItemList, String mallName, String category) {
 
-        ////////////////////test
-//        System.out.println("naverItemList : " + naverItemList);
-        ////////////////////
-
         return naverItemList
                 .stream()
                 .filter(item -> !item.isEmpty() &&

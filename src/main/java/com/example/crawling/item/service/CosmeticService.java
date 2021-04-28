@@ -1,7 +1,7 @@
 package com.example.crawling.item.service;
 
-import com.example.crawling.Dto.Cosmetic;
-import com.example.crawling.Dto.Item;
+import com.example.crawling.item.domain.Cosmetic;
+import com.example.crawling.item.domain.Item;
 import com.example.crawling.item.api.dto.CosmeticResponseDto;
 import com.example.crawling.item.domain.ItemRepository;
 import com.example.crawling.item.domain.cosmetic.CosmeticIngredient;

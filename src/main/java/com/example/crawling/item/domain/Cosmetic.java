@@ -1,4 +1,4 @@
-package com.example.crawling.Dto;
+package com.example.crawling.item.domain;
 
 import com.example.crawling.item.domain.cosmetic.CosmeticIngredient;
 import lombok.*;

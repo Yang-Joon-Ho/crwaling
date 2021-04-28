@@ -1,6 +1,6 @@
 package com.example.crawling.item.domain.vo;
 
-import com.example.crawling.Dto.Cosmetic;
+import com.example.crawling.item.domain.Cosmetic;
 import com.example.crawling.item.domain.cosmetic.CosmeticIngredient;
 import lombok.Getter;
 

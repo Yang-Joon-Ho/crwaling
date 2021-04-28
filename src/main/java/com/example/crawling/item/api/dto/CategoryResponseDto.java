@@ -1,6 +1,6 @@
 package com.example.crawling.item.api.dto;
 
-import com.example.crawling.Dto.Category;
+import com.example.crawling.item.domain.Category;
 import lombok.Getter;
 import lombok.Setter;
 

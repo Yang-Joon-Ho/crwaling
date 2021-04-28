@@ -1,6 +1,6 @@
 package com.example.crawling.item.api.dto;
 
-import com.example.crawling.Dto.Reputation;
+import com.example.crawling.item.domain.Reputation;
 import lombok.Getter;
 import lombok.Setter;
 

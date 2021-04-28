@@ -1,6 +1,6 @@
 package com.example.crawling.item.api.dto;
 
-import com.example.crawling.Dto.Cosmetic;
+import com.example.crawling.item.domain.Cosmetic;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,7 +1,7 @@
 package com.example.crawling.item.service;
 
-import com.example.crawling.Dto.Category;
-import com.example.crawling.Dto.Item;
+import com.example.crawling.item.domain.Category;
+import com.example.crawling.item.domain.Item;
 import com.example.crawling.item.api.dto.ItemResponseDto;
 import com.example.crawling.item.domain.CategoryRepository;
 import com.example.crawling.item.domain.ItemRepository;

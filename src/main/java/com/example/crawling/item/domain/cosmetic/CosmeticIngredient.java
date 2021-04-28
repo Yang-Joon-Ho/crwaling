@@ -1,6 +1,6 @@
 package com.example.crawling.item.domain.cosmetic;
 
-import com.example.crawling.Dto.Cosmetic;
+import com.example.crawling.item.domain.Cosmetic;
 import com.example.crawling.item.domain.cosmetic.ingredient.Ingredient;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;

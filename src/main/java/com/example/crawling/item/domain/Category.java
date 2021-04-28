@@ -1,4 +1,4 @@
-package com.example.crawling.Dto;
+package com.example.crawling.item.domain;
 
 import lombok.AccessLevel;
 import lombok.Getter;

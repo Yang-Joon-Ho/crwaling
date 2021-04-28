@@ -15,7 +15,6 @@ public class IngredientFeature {
     @Column(name = "ingredient_feature_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)

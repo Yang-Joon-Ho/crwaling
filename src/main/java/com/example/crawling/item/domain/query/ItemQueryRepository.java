@@ -1,7 +1,7 @@
 package com.example.crawling.item.domain.query;
 
-import com.example.crawling.Dto.Category;
-import com.example.crawling.Dto.Item;
+import com.example.crawling.item.domain.Category;
+import com.example.crawling.item.domain.Item;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

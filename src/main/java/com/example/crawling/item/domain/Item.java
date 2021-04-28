@@ -1,4 +1,4 @@
-package com.example.crawling.Dto;
+package com.example.crawling.item.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;

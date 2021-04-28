@@ -1,6 +1,6 @@
 package com.example.crawling.item.service;
 
-import com.example.crawling.Dto.Category;
+import com.example.crawling.item.domain.Category;
 import com.example.crawling.item.api.dto.CategoryResponseDto;
 import com.example.crawling.item.domain.CategoryRepository;
 import com.example.crawling.item.domain.vo.ItemCategoryVO;

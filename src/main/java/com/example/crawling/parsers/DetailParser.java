@@ -1,6 +1,6 @@
 package com.example.crawling.parsers;
 
-import com.example.crawling.Dto.CosmeticDto;
+import com.example.crawling.item.domain.CosmeticDto;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Component;
@@ -41,7 +41,7 @@ public class DetailParser<T> implements Parser<T> {
                 .stream()
                 .map(item -> {
                     Map<String, String> itemDetailMap = new HashMap<>();
-                    String[] itemDetail = item.split(":");
+                    String[] itemDetail = item.split(" : ");
 
                     String cosmeticFeatureKey = itemDetail[0];
                     String cosmeticFeatureValue = itemDetail[1];

@@ -2,6 +2,10 @@ package com.example.crawling;
 
 import com.example.crawling.Dto.*;
 import com.example.crawling.constants.NaverFilterCondition;
+import com.example.crawling.item.domain.Category;
+import com.example.crawling.item.domain.Cosmetic;
+import com.example.crawling.item.domain.CosmeticDto;
+import com.example.crawling.item.domain.Reputation;
 import com.example.crawling.item.domain.cosmetic.CosmeticIngredient;
 import com.example.crawling.item.domain.cosmetic.ingredient.Feature;
 import com.example.crawling.item.domain.cosmetic.ingredient.Ingredient;
@@ -47,7 +51,7 @@ public class NaverCosmeticCrawler {
         System.out.println("in callCrawling");
         //////////////
 
-        String searchWord = "로션";
+        String searchWord = "영양제";
 
         String[] headerKey = new String[] {"wscYGh5pC6OYmPwTC_SQ", "0l2zINy5mT"};
 
@@ -62,22 +66,12 @@ public class NaverCosmeticCrawler {
         long after = System.currentTimeMillis();
         long result = after - before;
 
-//        System.out.println("걸린 시간 : " + result);
     }
 
     public void crawling (String queryParameter, String searchWord, String clientId, String clientSecret) {
 
-        //////////////////test
-        //System.out.println("queryParameter : " + queryParameter);
-        //System.out.println("searchWord : " + searchWord);
-        //System.out.println("clientId : " + clientId);
-        //System.out.println("clientSecret : " + clientSecret);
-        /////////////////test
-
         NaverOpenApi naverOpenApi = new NaverOpenApi();
         String responseBody = naverOpenApi.getData(clientId, clientSecret, queryParameter, searchWord);
-
-//        System.out.println("responsebody : " + responseBody);
 
         JsonMapperUtil jsonMapper = new JsonMapperUtil <List<ItemDto>>();
         List<ItemDto> list = null;
@@ -87,6 +81,9 @@ public class NaverCosmeticCrawler {
         } catch (JsonProcessingException e) {
         }
 
+        //////////////
+        //////////////
+        //cannot filtering
         List<ItemDto> filteredList = itemFilter(list, NaverFilterCondition.NAVER_MALL_NAME.getCode(),
                 NaverFilterCondition.NAVER_CATEGORY.getCode());
 
